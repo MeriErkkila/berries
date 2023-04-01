@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main::after {
+    content: "";
+    clear:both;
+    display:table
+}
+
+.menu::after {
+    content: "";
+    clear:both;
+    display:table
+}
+
+
+/*responsive*/
+[class*="col-"] {
+    float: left;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/*menu, will become buttons*/
+.menu {
+    padding: 3%;
+    background: rgb(248, 249, 255);
+    text-align: center;
+}
+
+/*header with photo*/
+header {
+    color: rgb(255, 255, 255);
+    background-image: url("cloudberry.jpg");
+    text-align: center;
+    padding: 200px;
+    font-size: 700%;
+}
+
+/*front page with h1, paragraphs and a group photo*/
+.main {
+    padding: 5%;
+    font-size: large;
+    background: rgb(239, 242, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+} 
+
+/*This is blocking the web site from being responsive*/
+/*some one help me with this shit*/
+/*centering the group photo*/
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*What are we doing settings*/
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+
+
+
+/*photo settings*/
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 5%;
+}
+
+/*paragraph settings*/
+p {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: rgb(39, 57, 151);
+}
+
+#design-cast {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .member {
+    flex: 0 48%;
+    margin: 1% 1% 45px 1%;
+  }
+  
+  .member img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  @media (max-width:480px) {
+    .member {
+      flex: 0 100%
+    }
+  }
+
+
+#map {
+    float: right;
+}
+
+.list {
+    float: left;
+}
