@@ -1,8 +1,18 @@
 from flask import Flask, request, render_template, session, redirect
 import pandas as pd
 
+# Creating the app
 app = Flask(__name__)
 
+
+# Loading data into dataframe
+df = pd.read_csv("data.csv")
+
+
+
+
+
+# Handling the pages 
 
 @app.route('/')
 def home():
@@ -32,6 +42,16 @@ def sdg():
 def sus():
     return render_template('sustainability.html')
 
+@app.route('/data_test', methods=("POST", "GET"))
+def html_table():
+    return render_template('data_test.html',  tables=[df.to_html(classes='data', table_id="myTable")], titles=df.columns.values)
+
+
+
+
+
+
+# Handling errors
 
 @app.errorhandler(404)
 def error_404(e):
@@ -44,6 +64,8 @@ def error_500(e):
 
 
 
+
+# Running the app
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
