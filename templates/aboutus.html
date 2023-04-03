@@ -3,17 +3,17 @@
     <head>
         <title>Berry Project</title>
         <meta charset="utf-8">
-        <link href="berries.css" rel="stylesheet">
+        <link href="{{ url_for('static', filename='berries.css') }}" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4354658068.js" crossorigin="anonymous"></script>
     </head>
 
     <body><!--Menu with links-->
         <nav>
         <div class="menu">
-            <div class="col-3"><a href='index.html'>Main page</a></div>
-            <div class="col-3"><a href='aboutus.html'>Video and about us</a></div>
-            <div class="col-3"><a href='datainf.html'>Data thingies</a></div>
-            <div class="col-3"><a href='sustainability.html'>sustainability</a></div>
+            <div class="col-3"><a href='/index'>Main page</a></div>
+            <div class="col-3"><a href='/aboutus'>Video and about us</a></div>
+            <div class="col-3"><a href='/datainf'>Data thingies</a></div>
+            <div class="col-3"><a href='/sustainability'>sustainability</a></div>
         </div>
         </nav>
     </body>
@@ -30,13 +30,13 @@
            
             <div id="design-cast">
                 <div class="member">
-                  <img src="Emiliia.png" class="img-responsive img-thumbnail" alt="Responsive image" />
+                  <img src="{{ url_for('static', filename='Emiliia.png') }}" class="img-responsive img-thumbnail" alt="Responsive image" />
                   <div class="name">Emiliia Zemskova
                     <br />Machine Learning and Data Engineering student
                 </div>
                 </div>
                 <div class="member">
-                  <img src="MRezmuves.png" class="img-responsive img-thumbnail" alt="Responsive image" />
+                  <img src="{{ url_for('static', filename='MRezmuves.png') }}" class="img-responsive img-thumbnail" alt="Responsive image" />
                   <div class="name">Miki Rézmüves
                     <br />Machine Learning and Data Engineering student</div>
                 </div>
@@ -45,6 +45,7 @@
         </div>
 
         <footer>
+            <!-- Good video, great choice   - Miki     -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </footer>
        <script>
