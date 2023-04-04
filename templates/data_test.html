@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <button onclick="filterTable()">Filter by Year</button>
+
+    {% for table in tables %}
+        {{ table|safe }}
+    {% endfor %}
+
+    <script>
+        function filterTable()
+        {
+            var table = document.getElementById("myTable");
+            var year = prompt("Enter a year to filter by: ");
+
+            // Searching for the "year" column
+            var yearIndex = -1;
+            var headers = table.rows[0].cells;
+            for (var i = 0; i < headers.length; i++)
+            {
+                if (headers[i].innerHTML.trim() == "year")
+                {
+                    yearIndex = i;
+                    break;
+                }
+            }
+
+            // Check if there is a "year" column or not
+            if (yearIndex == -1)
+            {
+                alert("Couldn't find \"year\" column!")
+                return;
+            }
+
+
+            for (var i = 1; i < table.rows.length; i++)
+            {
+                var row = table.rows[i];
+                var yearCell = row.cells[yearIndex];
+                if (yearCell.innerHTML != year)
+                {
+                    row.style.display = "none";
+                }
+                else
+                {
+                    row.style.display = "";
+                }
+            }
+
+        }
+    </script>
+
+</body>
+</html>

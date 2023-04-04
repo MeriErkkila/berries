@@ -3,7 +3,7 @@
     <head>
         <title>Berry Project</title>
         <meta charset="utf-8">
-        <link href="berries.css" rel="stylesheet">
+        <link href="{{ url_for('static', filename='berries.css') }}" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4354658068.js" crossorigin="anonymous"></script>
     </head>
 
@@ -11,10 +11,10 @@
     <body><!--Menu with links-->
         <nav>
         <div class="menu">
-            <div class="col-3"><a href='index.html'>Main page</a></div>
-            <div class="col-3"><a href='aboutus.html'>Video and about us</a></div>
-            <div class="col-3"><a href='datainf.html'>Data thingies</a></div>
-            <div class="col-3"><a href='sustainability.html'>sustainability</a></div>
+            <div class="col-3"><a href='/index'>Main page</a></div>
+            <div class="col-3"><a href='/aboutus'>Video and about us</a></div>
+            <div class="col-3"><a href='/datainf'>Data thingies</a></div>
+            <div class="col-3"><a href='/sustainability'>sustainability</a></div>
         </div>
         </nav>
     </body>
@@ -30,7 +30,7 @@
 
             <!--a photo of something, groupwork maybe?-->
             <div class="col-6 col-s-12">
-                <img src="group1.jpg">
+                <img src="{{ url_for('static', filename='group1.jpg') }}">
             </div>
 
             <!--explain here about the project, us etc-->
@@ -83,7 +83,7 @@
                 </div>
                 <div class="map">
                 <div class="col-6 col-s-12" id="map">
-                    <img src="map.jpg">
+                    <img src="{{ url_for('static', filename='map.jpg') }}">
                 </div>
                 </div>
             </div>
