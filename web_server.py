@@ -46,6 +46,14 @@ def sus():
 def html_table():
     return render_template('data_test.html',  tables=[df.to_html(classes='data', table_id="myTable")], titles=df.columns.values)
 
+@app.route('/chart')
+def chart():
+    return render_template('chart.html')
+
+@app.route('/map')
+def map():
+    return render_template('footprint2.html')
+
 
 
 
