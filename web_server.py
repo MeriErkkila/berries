@@ -34,13 +34,9 @@ def berries():
 def datainf():
     return render_template('datainf.html')
 
-@app.route('/sdg')
-def sdg():
-    return render_template('sdg.html')
-
 @app.route('/sustainability')
 def sus():
-    return render_template('sustainability.html')
+    return render_template('sdg.html')
 
 @app.route('/data_test', methods=("POST", "GET"))
 def html_table():
