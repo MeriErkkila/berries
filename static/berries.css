@@ -144,3 +144,37 @@ footer {
 .list {
     float: left;
 }
+
+.aboutsection {
+    background: rgb(39, 57, 151);
+    color: rgb(248, 249, 255);
+    text-align: center;
+    padding: 2%;
+    font-size: 300%;
+}
+
+.img1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img3 {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.img4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img5 {
+    display: flex;
+    flex-wrap: wrap;
+}
