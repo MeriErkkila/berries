@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Berry Project</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link href="{{ url_for('static', filename='sdg.css') }}" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+        <!--Menu, will be made to buttons for changing page-->
+        <div class="menu">
+            <div class="mycol-3">Main page</div>
+            <div class="mycol-3">Video and about us</div>
+            <div class="mycol-3">Data thingies</div>
+            <div class="mycol-3">Sustainability</div>
+        </div>
+
+        <!--photos with modals, paragraphs-->
+        <div class="main">
+            <h1>Sustainable development values</h1><br>
+        
+        <div class="row">
+            <div class="mycol-2 mycol-s-4">
+            <div class="sdg1" onclick="openModal('SDG 1: end poverty', 'Unfortunately we did not focus on berry growths correlation to this. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal1\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg1.jpg') }}" class="image">
+            </div>
+            </div>
+        
+            <div class="mycol-2 mycol-s-4">
+            <div class="sdg2" onclick="openModal('SDG 2: zero hunger', 'This SDG aims to end hunger, achieve food security and improved nutrition, and promote sustainable agriculture. Our research revealed that growing berries at the optimal altitude can lead to more sustainable farming practices, reducing dependence on artificial fertilizers and pesticides and leading to healthier soil. By growing crops in a sustainable manner, we can contribute to ending hunger and achieving food security while promoting sustainable agriculture. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal2\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg2.jpg') }}" class="image">
+            </div>
+            </div>
+
+            <div class="mycol-2 mycol-s-4">
+             <div class="sdg3" onclick="openModal('SDG 3: health and well-being', 'Unfortunately we did not focus on berry growths correlation to this. We can still remind, that there have been multiple studies on health benefits of berries, such as <a href=\'https://www.hsph.harvard.edu/news/hsph-in-the-news/fresh-berries-are-among-the-healthiest-foods-you-can-eat/#:~:text=He%20suggested%20eating%20a%20cup,help%20promote%20a%20healthy%20gut.\' target=\'_blank\'>this</a>. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal3\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg3.jpg') }}" class="image">
+            </div>
+            </div>
+
+            <div class="mycol-2 mycol-s-4">
+            <div class="sdg4" onclick="openModal('SDG 4: quality of education', 'Unfortunately we did not focus on berry growths correlation to this. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal4\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg4.jpg') }}" class="image">
+            </div>
+            </div>
+
+            <div class="mycol-2 mycol-s-4">
+            <div class="sdg5" onclick="openModal('SDG 5: gender equality', 'Unfortunately we did not focus on berry growths correlation to this. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal5\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg5.jpg') }}" class="image">
+            </div>
+            </div>
+
+            <div class="mycol-2 mycol-s-4">
+             <div class="sdg6" onclick="openModal('SDG 6: availability of water and sanitation', 'Unfortunately we did not focus on berry growths correlation to this. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal6\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg6.jpg') }}" class="image">
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mycol-2 mycol-s-4">
+            <div class="sdg7" onclick="openModal('SDG 7: sustainable and affordable energy', 'Unfortunately we did not focus on berry growths correlation to this. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal7\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg7.jpg') }}" class="image">
+            </div>
+            </div>
+
+            <div class="mycol-2 mycol-s-4">
+            <div class="sdg8" onclick="openModal('SDG 8: decent work and economic growth', 'Unfortunately we did not focus on berry growths correlation to this. We would still like to bring to your attention, that there have been some <a href=\'https://yle.fi/a/3-9978129\' target=\'_blank\'>violations</a> of workers rights as well as human trafficking in berry picking. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal8\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg8.jpg') }}" class="image">
+            </div>
+            </div>
+
+            <div class="mycol-2 mycol-s-4">
+            <div class="sdg9" onclick="openModal('SDG 9: sustainable idustrialization', 'Unfortunately we did not focus on berry growths correlation to this. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal9\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg9.jpg') }}" class="image">
+            </div>
+            </div>
+
+            <div class="mycol-2 mycol-s-4">
+            <div class="sdg10" onclick="openModal('SDG 10: inequality within and among countries', 'Unfortunately we did not focus on berry growths correlation to this. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal10\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg10.jpg') }}" class="image">
+            </div>
+            </div>
+
+            <div class="mycol-2 mycol-s-4">
+            <div class="sdg11" onclick="openModal('SDG 11: sustainable cities and communities', 'This SDG aims to make cities and human settlements inclusive, safe, resilient, and sustainable. Our research found that the growth of berries in Finland is not affected by the population or the distance of the closest city or airport, indicating that urbanization has not negatively impacted berry growth in the country. This finding provides evidence that cities and their surrounding areas can coexist in a sustainable manner and contributes to the goal of creating sustainable cities and communities. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal11\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg11.jpg') }}" class="image">
+            </div>
+            </div>
+
+            <div class="mycol-2 mycol-s-4">
+            <div class="sdg12" onclick="openModal('SDG 12: sustainable consumption and production', 'Unfortunately we did not focus on berry growths correlation to this. Berry picking in finland is done by hand, so it does not cause problems in waste management. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal12\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg12.jpg') }}" class="image">
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mycol-2 mycol-s-4">
+            <div class="sdg13" onclick="openModal('SDG 13: climate action', 'Unfortunately we did not focus on berry growths correlation to this. However, even without measured data we can say, that global warming is likely going to affect berry growth quite a lot. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal13\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg13.jpg') }}" class="image">
+            </div>
+            </div>
+
+            <div class="mycol-2 mycol-s-4">
+            <div class="sdg14" onclick="openModal('SDG 14: sustainable use of oceans', 'Unfortunately we did not focus on berry growths correlation to this. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal14\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg14.jpg') }}" class="image">
+            </div>
+            </div>
+
+            <div class="mycol-2 mycol-s-4">
+            <div class="sdg15" onclick="openModal('SDG 15: inequality within and among countries', 'This SDG seeks to protect, restore, and promote the sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, halt and reverse land degradation, and halt biodiversity loss. Our research shows that berries are an essential part of the ecosystem of Finland and their growth and sustainability are essential to maintaining the rich biodiversity of the country. By promoting sustainable practices in berry farming, we can contribute to the protection and promotion of life on land. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal15\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg15.jpg') }}" class="image">
+            </div>
+            </div>
+
+            <div class="mycol-2 mycol-s-4">
+            <div class="sdg16" onclick="openModal('SDG 16: global peace', 'Unfortunately we did not focus on berry growths correlation to this. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal16\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg16.jpg') }}" class="image">
+            </div>
+            </div>
+
+            <div class="mycol-2 mycol-s-4">
+            <div class="sdg17" onclick="openModal('SDG 17: global partnerships', 'Unfortunately we did not focus on berry growths correlation to this. More info about this SDG value you can find <a href=\'https://sdgs.un.org/goals/goal17\' target=\'_blank\'>here</a>.')">
+            <img src="{{ url_for('static', filename='sdg17.jpg') }}" class="image">
+            </div>
+            </div>
+        </div>
+
+        <br>
+            <!--paragraphs-->
+                <h3>Sustainability in berries</h3>
+                <div class="row">
+                <p>The final project of this year was to conduct a small research about the growth of berries in Finland. 
+                The data we received included the types of berries, the forests they grew in, the date of observation 
+                and the location of the berries. The objective was to discover any meaningful correlations in the data 
+                and relate the findings to the UN Sustainable Development Goals (SDGs).
+                </p><p>
+                The research produced significant results that could inform agricultural practices in the country. We 
+                discovered that the growth of berries in Finland is not affected by the population or the distance of the 
+                closest city, indicating that urbanization has not negatively impacted berry growth in the country. This 
+                finding is particularly significant for SDG 11, which aims to make cities and human settlements inclusive, 
+                safe, resilient, and sustainable. By showing that urbanization has not adversely affected berry growth, 
+                the study provides evidence that cities and their surrounding areas can coexist in a sustainable manner.
+                </p><p>
+                In addition, we also discovered a weak positive correlation between the growth of berries and the distance 
+                from the closest airport. However, this correlation coefficient was still considered negligible and does 
+                not significantly impact the growth of the berries.
+                </p><p>
+                The research also revealed that the optimal altitude for berry growth in Finland is around 150 meters, and 
+                while cloudberries are a minority in most altitudes, they are particularly well-suited to high altitudes. 
+                This finding could have significant implications for sustainable agriculture practices, particularly for 
+                SDG 2, which aims to end hunger, achieve food security and improved nutrition, and promote sustainable 
+                agriculture. By growing crops at the right altitude, farmers can reduce their dependence on artificial 
+                fertilizers and pesticides, leading to healthier soil and more sustainable farming practices.
+                </p><p>
+                Moreover, we also noted the potential impact of their findings on SDG 15, which seeks to protect, restore, 
+                and promote the sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, 
+                halt and reverse land degradation, and halt biodiversity loss. Berries are an important part of Finland's 
+                ecosystem, and their growth and sustainability are essential to maintaining the country's rich biodiversity. 
+                Although we haven't done extensive research on this topic, we believe it would be worth to further investigate this.
+                </p><p>
+                In conclusion, the research has important implications for sustainable agriculture practices and the SDGs. 
+                The findings demonstrate that urbanization has not negatively impacted berry growth in Finland, and that 
+                growing berries at the right altitude can lead to more sustainable farming practices. By providing 
+                evidence-based insights into the growth of berries in Finland, the study contributes to global efforts to 
+                create a more sustainable world. The team's research underscores the importance of conducting research on 
+                local environmental issues and shows how local findings can inform sustainable practices and contribute to the SDGs.
+                </p>
+
+            </div>
+            <!--this code is basically straight copied from internet, makes the modals apparently-->
+            <div class="modal" id="sdgModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title"></h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+       <script>
+
+            function openModal(title, content) {
+                var modal = document.getElementById("sdgModal");
+                var modalTitle = modal.querySelector(".modal-title");
+                var modalBody = modal.querySelector(".modal-body");
+                
+                modalTitle.textContent = title;
+                modalBody.innerHTML = content;
+                
+                $(modal).modal("show");
+            }
+
+       </script> 
+    </body>
+</html>
