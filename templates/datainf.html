@@ -13,84 +13,42 @@
         <div class="menu">
             <div class="col-3"><a href='/index'>Main page</a></div>
             <div class="col-3"><a href='/aboutus'>Video and about us</a></div>
-            <div class="col-3"><a href='/datainf'>Data thingies</a></div>
-            <div class="col-3"><a href='/sustainability'>sustainability</a></div>
+            <div class="col-3"><a href='/datainf'>Data analytics</a></div>
+            <div class="col-3"><a href='/sustainability'>Sustainability</a></div>
         </div>
         </nav>
     </body>
         
     
         <!--header-->
-        <header>Name here</header>
+        <header>Data Analytics</header>
 
 
         <div class="main">
         <div class="row">
            
 
-            <!--a photo of something, groupwork maybe?-->
             <div class="col-6 col-s-12">
-                <img src="{{ url_for('static', filename='group1.jpg') }}">
+                <embed type="text/html" src="{{ url_for('static', filename='chart.html') }}" width="600" height="400">
+                <embed type="text/html" src="{{ url_for('static', filename='footprint2.html') }}" width="600" height="400">
             </div>
 
-            <!--explain here about the project, us etc-->
             <div class="col-6 col-s-12">
 
-                <h1>What are we doing</h1>
+                <h1>Our research and data</h1>
 
-                <p>zsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr 
-                yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uh
-                zsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo
-                ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr
-                yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzs
-                djfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo ou
-                uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoig
-                yguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr 
-                yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uh
-                zsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo
-                ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr
-                yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutd</p>
-                <p>yuoigyguyg yyogo ou uyf o y yu uhzs
-                djfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo ou
-                uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoigy
-                guyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr 
-                yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uh
-                zsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo
-                ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr
-                yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzs
-                djfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo ou
-                uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoig
-                yguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr 
-                yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uh
-                zsdjfkgljö iutdtr yuoigyguyg yyogo ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyogo
-                ou uyf o y yu uhzsdjfkgljö iutdtr yuoigyguyg yyo</p>
+                <p>Our research on the growth of berries in Finland has yielded some interesting findings. Using a dataset containing information on the type of berry, forest type, observation date and location of the berry, we tried to uncover any notable correlations and connections with the SDG values.</p>
+
+                <p>On our first inquiry we checked whether there was any connection between the number of berries and the population or proximity of the nearest city. However, our analyses showed that the growth of berries was not affected by these factors, indicating that other factors such as climate and soil composition influence it more.</p>
+
+                <p>Next, we investigated the relationship between altitude and berry growth. We found that there is a peak in the number of berries at around 150 meters above sea level. Beyond this threshold, berry growth decreases rapidly. It is also noteworthy that cloudberry, a type of berry, appears to be more resilient to high altitudes compared to other varieties.</p>
+
+                <p>Our findings highlight the potential benefits of sustainable berry cultivation practices, as berries are an important source of nutrition and income for many communities in Finland. By identifying the ideal altitude for optimal berry growth, farmers and growers can optimize their crop yields while preserving the environment.</p>
+                
+                <p>In conclusion, our research demonstrates the power of data analytics in uncovering valuable insights that can inform sustainable development practices. With further investigation, these findings may lead to more efficient and sustainable berry cultivation methods that support both economic growth and environmental stewardship.</p>
+                
+                <p>We have found these results and correlations mostly using Python, in particular the Pandas library. which had all the necessary functions and tools for our research. The website is based on a Flask server, and the charts/maps are made with Python's Plotly library.</p>
             </div>
         </div>
         </div>
-
-        <footer>
-            <div class="row">
-                <div class="list">
-                <div class="col-6 col-s-12">
-                    <h2>Contacts</h2>
-                    <p>jdsrsthay</p>
-                    <p>sjsnsyrjy</p>
-                    <p>sod8iltdf</p>
-                    <br>
-                    
-                    <i class="fa-solid fa-phone fa-2xl"></i>
-                </div>
-                </div>
-                <div class="map">
-                <div class="col-6 col-s-12" id="map">
-                    <img src="{{ url_for('static', filename='map.jpg') }}">
-                </div>
-                </div>
-            </div>
-        </footer>
-
-       <script>
-
-       </script> 
-   
 </html>
