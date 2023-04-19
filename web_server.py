@@ -64,7 +64,7 @@ def error_404(e):
 
 @app.errorhandler(500)
 def error_500(e):
-    return "<h1>Ooops, we messed up somewhere. How about hitting that good ol' reload button, to see if that fixes. If not, just wait for an undefinite amount of time, and eventually we'll fix the issue (no money back guarantee)</h1>", 500
+    return "<h1>Ooops, we messed up somewhere. How about hitting that good ol' reload button, to see if that fixes the issue? If not, just wait for an undefinite amount of time, and eventually we'll fix the issue (no money back guarantee)</h1>", 500
 
 
 
