@@ -3,8 +3,7 @@
     <head>
         <title>Berry Project</title>
         <meta charset="utf-8">
-        <link href="{{ url_for('static', filename='berries.css') }}" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/4354658068.js" crossorigin="anonymous"></script>
+        <link href="{{ url_for('static', filename='aboutus.css') }}" rel="stylesheet">
     </head>
 
     <body><!--Menu with links-->
@@ -16,54 +15,75 @@
             <div class="col-3"><a href='/sustainability'>sustainability</a></div>
         </div>
         </nav>
-    </body>
+
 
 
     <div class="aboutsection">
         <h1>Our Team</h1>
-        </div>
+    </div>
 
         <div class="main">
         <div class="row">
            
 
             
-
+            <div class="col-1 col-s-12"><p></p></div>
             <!--photos with description-->
-           
-            <div id="img1">
-                <img src ="{{ url_for('static', filename='Emiliia.png') }}" height="500px" width="500px" alt="Emiliia">
-                <p>Emiliia</p>
+            <div class="col-2 col-s-12">
+            <div class="img">
+                <img src ="{{ url_for('static', filename='Emiliia.png') }}" alt="Emiliia">
+                <h3>Emiliia</h3>
                 <p>Machine learning and data engineering student</p>
                 <a href="{{ url_for('static', filename='Emiliia Zemskova - CV.pdf') }}">CV</a>
-             </div>
-             
-             <div id="img2">
-                <img src ="{{ url_for('static', filename='MR.jpg') }}" height="400px" width="400px" alt="Miki">
-                <p>Miki</p>
+            </div>
+            </div>
+            
+            <div class="col-2 col-s-12">
+            <div class="img">
+                <img src ="{{ url_for('static', filename='MR.jpg') }}" alt="Miki">
+                <h3>Miki</h3>
                 <p>Machine learning and data engineering student</p>
                 <a href="{{ url_for('static', filename='Miklos_Rezmuves_CV.pdf') }}">CV</a>
-             </div>
-             <div id="img3">
-                <img src ="{{ url_for('static', filename='Meri.jpg') }}" height="400px" width="400px" alt="Meri">
-                <p>Meri</p>
+            </div>
+            </div>
+            
+            <div class="col-2 col-s-12">
+            <div class="img">
+                <img src ="{{ url_for('static', filename='Meri.jpg') }}" alt="Meri">
+                <h3>Meri</h3>
                 <p>Machine learning and data engineering student</p>
                 <a href="{{ url_for('static', filename='CV Meri.pdf') }}">CV</a>
-             </div>
-             <div id="img4">
-                <img src ="{{ url_for('static', filename='IVAN.jpg') }}" height="650px" width="400px" alt="Ivan">
-                <p>Ivan</p>
+            </div>
+            </div>
+            
+            <div class="col-2 col-s-12">
+            <div class="img">
+                <img src ="{{ url_for('static', filename='IVAN.jpg') }}" alt="Ivan">
+                <h3>Ivan</h3>
                 <p>Machine learning and data engineering student</p>
                 <a href="{{ url_for('static', filename='cv_IK.png') }}">CV</a>
-             </div>
-             <div id="img5">
-                <img src ="{{ url_for('static', filename='Ivans.jpg') }}" height="400px" width="400px" alt="Ivans">
-                <p>Ivan S</p>
+            </div>
+            </div>
+            
+            <div class="col-2 col-s-12">
+            <div class="img">
+                <img src ="{{ url_for('static', filename='Ivans.jpg') }}" alt="Ivans">
+                <h3>Ivan S</h3>
                 <p>Machine learning and data engineering student</p>
                 <a href="{{ url_for('static', filename='cv_IK.png') }}">CV</a>
-             </div>
+            </div>
+            </div>
+            <div class="col-1 col-s-12"><p></p></div>
         </div>
         </div>
+
+
+        <footer>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/poahFdBV1AA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </footer>
+
+    </body>
+</html>
 
         <footer>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/poahFdBV1AA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
